@@ -45,12 +45,15 @@ I don't have any `src` attribute in the `img` tag above since I want to dynamica
 
 ## Release History
 
+* 0.0.2
+    * Removed a bug on mobile
+
 * 0.0.1
     * Work in progress
     
 ## Bugs
 
-There is a bug on mobile right now where touch is disabled after opening and closing the lightbox.
+[Fixed] There is a bug on mobile right now where touch is disabled after opening and closing the lightbox. Fixed by adding `display:none;` on the lightbox div. 
 
 ## Contributing
 
