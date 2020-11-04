@@ -6,7 +6,7 @@ Demo: [fredrikburmester.com](https://fredrikburmester.com)
 
 ## Info
 
-This is a simple lightbox with support for lazy loading when scrolling through images, arrow keys and swiping on both mobile and desktop using the [Swipe](https://swipe.js.org/) library, [GitHub](https://github.com/lyfeyaj/swipe). 
+This is a simple lightbox with support for lazy loaded galleries, lazy loading when scrolling through images, arrow keys and swiping on both mobile and desktop using the [Swipe](https://swipe.js.org/) library, [GitHub](https://github.com/lyfeyaj/swipe). 
 
 Since this lightbox was made to work with lazy loading, the image links can not be taken directly from the gallery-image `src` tag, that means that we need to have a pre-defined list of all links to our images.
 
