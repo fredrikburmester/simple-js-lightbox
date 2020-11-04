@@ -1,6 +1,6 @@
 # simple-js-lightbox
 
-> A very simple lightbox for use with image galleries. 
+> A simple lightbox for use with image galleries. 
 
 Demo: [fredrikburmester.com](https://fredrikburmester.com)
 
