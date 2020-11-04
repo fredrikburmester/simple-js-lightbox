@@ -6,16 +6,17 @@ Demo: [fredrikburmester.com](https://fredrikburmester.com)
 
 ## Info
 
-This is a super simple lightbox with support for arrow keys and swiping on both mobile and desktop using the [Swipe](https://swipe.js.org/) library, [GitHub](https://github.com/lyfeyaj/swipe). 
+This is a simple lightbox with support for lazy loading when scrolling through images, arrow keys and swiping on both mobile and desktop using the [Swipe](https://swipe.js.org/) library, [GitHub](https://github.com/lyfeyaj/swipe). 
+
+Since this lightbox was made to work with lazy loading, the image links can not be taken directly from the gallery-image `src` tag, that means that we need to have a pre-defined list of all links to our images.
 
 ## How-to
 
-1. To use this lightbox you need to have an array of the imagefiles with this structure:
+1. To use this lightbox you need to have an array of the image-files with this structure:
 
-`array['link'] = <link-to-the-image>`
+`obj['link'] = <link-to-the-image>`
 
 2. You need to include the CSS and JS file in your base html file. 
-
 ```
 <head>
   ...
@@ -28,8 +29,6 @@ This is a super simple lightbox with support for arrow keys and swiping on both 
 ```
 
 3. Include a lightbox div in your body.
-
-
 ```
 <body>
   <div id="lightbox" class="lightbox">
@@ -37,7 +36,12 @@ This is a super simple lightbox with support for arrow keys and swiping on both 
 </body>
 ```
 
-And everything will just work!
+4. Include `data-src` and `onclick()` attribute to gallery images: 
+```
+<img onclick="openLightbox("<image-number>")" data-src="./image-thumb.jpg" />
+```
+
+I don't have any `src` attribute in the `img` tag above since I want to dynamically add that, i.e. lazy-loading. But if you do not use lazy-loading in your gallery you can add the `src` attribute. The `data-src` tag still needs to be there though. 
 
 ## Release History
 
