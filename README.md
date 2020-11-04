@@ -30,6 +30,7 @@ var obj = [
 <head>
   ...
   <link rel="stylesheet" href="./lightbox.css">
+  <script src="./swipe.js"></script>
 </head>
 <body>
   ...
