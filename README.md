@@ -14,7 +14,16 @@ Since this lightbox was made to work with lazy loading, the image links can not 
 
 1. To use this lightbox you need to have an array of the image-files with this structure:
 
-`obj['link'] = <link-to-the-image>`
+```
+var obj = [
+    {
+        'src': './img/1.jpg'
+    },
+    {
+        'src': './img/2.jpg'
+    }
+]
+```
 
 2. You need to include the CSS and JS file in your base html file. 
 ```
