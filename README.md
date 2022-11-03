@@ -2,7 +2,7 @@
 
 > A simple lightbox for use with image galleries. 
 
-Demo: [fredrikburmester.com](https://fredrikburmester.com)
+Demo: [fredrik.studio](https://fredrik.studio)
 
 ## Info
 
